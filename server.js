@@ -5,6 +5,6 @@ var app = express();
 
 app.use(express.static("dist"));
 
-app.listen(18320, function() {
+app.listen(process.env.PORT || 5000, function() {
   console.log('listening');
 });
